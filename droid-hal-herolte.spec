@@ -9,6 +9,11 @@
 
 %define installable_zip 1
 
+# As the S7 is a device with Mali GPU
+%define android_config \
+#define MALI_QUIRKS 1\
+%{nil}
+
 %define straggler_files \
 /bugreports\
 /cache\
